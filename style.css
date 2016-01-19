@@ -28,8 +28,23 @@ ul#primary-menu{font-family:'Open Sans';
 
 #logos{background-color:#efefef;}
 
-#demo {background-image: url('/wp-content/uploads/2016/01/gradient-background.png') repeat-x;}
+#demo {    background: #007ac3; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#193573, #007ac3); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#193573, #007ac3); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#193573, #007ac3); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#193573, #007ac3); /* Standard syntax */}
 
 #bannertext h1, #bannertext p {
 	max-width: 500px;
+}
+
+.bx-wrapper .bx-caption {
+    background: transparent;
+    text-align: center;
+}
+
+.bx-wrapper .bx-caption span {
+    color: #6c7980;
+    font-family: inherit;
+    font-size: inherit;
 }
