@@ -1,0 +1,35 @@
+/*
+Theme Name: AppStack Child
+Template: appstack
+Author: Child Theme Configurator
+Version: 1.0.1451323614
+Updated: 2015-12-28 17:26:54
+*/
+
+@charset "UTF-8";
+
+ul#primary-menu{font-family:'Open Sans';
+				}
+
+.header-banner-top .horizontal-nav a {font-weight:400;
+									text-transform:lowercase;}
+
+
+.stack-header-overlay, #bannertext{text-align:left;margin-bottom:80px;}
+
+.one-thirteen{max-width:7.4%;}
+
+#customers, #logos, .full-width-outer { 
+   margin: 0px -600rem;
+   padding: 40px 600rem 80px;
+   max-width: 99999rem;
+}
+
+
+#logos{background-color:#efefef;}
+
+#demo {background-image: url('/wp-content/uploads/2016/01/gradient-background.png') repeat-x;}
+
+#bannertext h1, #bannertext p {
+	max-width: 500px;
+}
