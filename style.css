@@ -15,27 +15,36 @@ ul#primary-menu{font-family:'Open Sans';
 									text-transform:lowercase;}
 
 
-.stack-header-overlay, #bannertext{text-align:left;margin-bottom:80px;}
+.stack-header-overlay, #bannertext{text-align:left;}
+
+#bannertext {bottom:25%;}
 
 .one-thirteen{max-width:7.4%;}
 
-#customers, #logos, .full-width-outer { 
+#customers, #logos, #testimonials, #testimonials-header, .full-width-outer { 
    margin: 0px -600rem;
-   padding: 40px 600rem 80px;
+   padding: 10px 600rem 20px;
    max-width: 99999rem;
 }
 
 
-#logos{background-color:#efefef;}
+#logos{background-color:#fff;}
+
+#customers{background-color:#efefef;}
+
+#testimonials{background-color:#efefef;}
+
+#testimonials-header{background-color:#efefef;}
 
 #demo {    background: #007ac3; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#193573, #007ac3); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#193573, #007ac3); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#193573, #007ac3); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#193573, #007ac3); /* Standard syntax */}
+    background: -webkit-linear-gradient(#007ac3, #193573); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#007ac3, #193573); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#007ac3, #193573); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#007ac3, #193573); /* Standard syntax */
+    padding:20px 0;}
 
 #bannertext h1, #bannertext p {
-	max-width: 500px;
+	max-width: 550px;
 }
 
 .bx-wrapper .bx-caption {
@@ -47,4 +56,26 @@ ul#primary-menu{font-family:'Open Sans';
     color: #6c7980;
     font-family: inherit;
     font-size: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {font-family:'Exo'; font-weight:400;line-height:1.1;}
+
+h2{font-size:30px;}
+
+p{font-size: 16px;line-height:28px;}
+
+.comment-form .submit, .btn-link, .error-404 .search-submit {font-size:16px;}
+
+#bannertext p {font-size:20px;line-height: 32px;}
+
+#bannertext h1 {font-size:3em; text-transform:uppercase;}
+
+.site-footer, .site-footer .content {background-color:#252525 !important;}
+
+.stack-cols .stack-col p {margin-right:30px;}
+
+@media screen and (max-width:667px) {
+  #bannertext {
+        padding-bottom: 15px;
+  }
 }
