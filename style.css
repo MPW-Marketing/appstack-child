@@ -6,8 +6,6 @@ Version: 1.0.1451323614
 Updated: 2015-12-28 17:26:54
 */
 
-@charset "UTF-8";
-
 ul#primary-menu{font-family:'Open Sans';
 				}
 
@@ -58,9 +56,9 @@ ul#primary-menu{font-family:'Open Sans';
     font-size: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {font-family:'Exo'; font-weight:400;line-height:1.1;}
+h1, h2, h3, h4, h5, h6 {font-family:'Exo'; font-weight:400;line-height:1.1;text-transform:none;color:#6c7980;}
 
-h2{font-size:30px;}
+h2{font-size:26px;font-weight:400;color:#6c7980;}
 
 p{font-size: 16px;line-height:28px;}
 
@@ -74,8 +72,79 @@ p{font-size: 16px;line-height:28px;}
 
 .stack-cols .stack-col p {margin-right:30px;}
 
+.header-banner-top .horizontal-nav .menu-main-container .sub-menu a {
+    padding: 10px 24px!important;
+}
+
+.stacktable { width: 100%; }
+.st-head-row.st-head-row-main { font-size: 1.5em; padding-top: 0; }
+.st-key { width: 49%; text-align: right; padding-right: 1%; }
+.st-val { width: 49%; padding-left: 1%; }
+.stacktable.small-only th.st-head-row {
+    padding-top: 30px;
+}
+.stacktable.small-only th.st-head-row.st-head-row-main {
+    padding-top: 0px;
+}
+
+
+/* RESPONSIVE EXAMPLE */
+
+.stacktable.large-only { display: table; }
+.stacktable.small-only { display: none; }
+
+table.dataTable {
+  font-size: 14px;
+}
+.dataTable th {
+  font-size: 12px;
+}
+
+table .column-1 {
+    width: 200px;
+}
+
+@media screen and (max-width:1200px) {
+    .stack-holder .content {
+    padding-top: 90px;
+}
+}
+@media screen and (max-width:900px) {
+    .stacktable.large-only { display: none; }
+  .stacktable.small-only { display: table; }
+
+}
+
+@media screen and (max-width: 718px) {
+  .stack-cols .stack-col p {
+    margin: 0 auto;
+}
+.stack-holder .content-area {
+    margin-bottom: 0;
+}
+.stack-content, .white-section.br_editor {
+    padding-bottom:  0;
+}
+    .stack-holder .content {
+    padding-top: 20px;
+}
+}
+
 @media screen and (max-width:667px) {
   #bannertext {
         padding-bottom: 15px;
   }
+}
+
+.header-banner-top .banner .entry-title {visibility:hidden;}
+.stack-header-overlay {background:none;}
+.header-banner-top .banner .banner-image {opacity:1;}
+
+.wpcf7-submit, .wpcf7-form input[type="submit"] {
+padding: .6em 1em .4em;
+}
+
+li#menu-item-459 a {
+    color: #ee3b33;
+    font-weight: bold;
 }
