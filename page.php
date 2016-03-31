@@ -7,7 +7,6 @@
  * and that other 'pages' on your WordPress site will use a
  * different template.
  *
- * Template Name: Sidebar Page
  * @package AppStack
  */
 
@@ -35,16 +34,19 @@ get_header(); ?>
     </div>
     
   </div>
+
   <?php } ?>
 </header>
-  <div class="stack-holder">
-   <div class="content">
-
+  
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-		        <?php if ( function_exists( 'get_field' ) && get_field( 'hide_header' ) == 1 ) {} else { ?>
+		<?php if ( function_exists( 'get_field' ) && get_field( 'hide_header' ) == 1 ) {} else { ?>
+		<section class="title-holder">
+
 		        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		        <?php } ?>
+
+		        </section>
+		        		        <? } ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -60,12 +62,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php
-	get_sidebar();
-	?>
-	</div> <!--content-->
-
-	</div><!--stack-holder-->
 
 <?php get_footer(); ?>

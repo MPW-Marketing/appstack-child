@@ -19,7 +19,7 @@ ul#primary-menu{font-family:'Open Sans';
 
 .one-thirteen{max-width:7.4%;}
 
-#customers, #logos, #testimonials, #testimonials-header, .full-width-outer { 
+#customers, #logos, #testimonials, #testimonials-header, #testimonials-display, .full-width-outer { 
    margin: 0px -600rem;
    padding: 10px 600rem 20px;
    max-width: 99999rem;
@@ -30,7 +30,7 @@ ul#primary-menu{font-family:'Open Sans';
 
 #customers{background-color:#efefef;}
 
-#testimonials{background-color:#efefef;}
+#testimonials, #testimonials-display{background-color:#efefef;}
 
 #testimonials-header{background-color:#efefef;}
 
@@ -104,9 +104,42 @@ table .column-1 {
     width: 200px;
 }
 
+.wpcf7-form-control.g-recaptcha.wpcf7-recaptcha {
+    border-bottom: none;
+}
+#testimonials-display .g.g-2 {
+    margin: 0 auto;
+    text-align: center;
+}
+.stack-content, .white-section.br_editor {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 10px 0 80px;
+}
+.site-main h1 {
+    margin: .2em 0;
+}
+.title-holder {
+  max-width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+}
+.content-area {
+    padding: 20px;
+}
+.stack-holder .content-area {
+  padding: 0;
+}
+input[type="checkbox"], input[type="radio"] {
+    width: auto;
+}
+
 @media screen and (max-width:1200px) {
     .stack-holder .content {
     padding-top: 90px;
+}
+#testimonials-display .g-2 .g-col {
+    max-width: 27%;
 }
 }
 @media screen and (max-width:900px) {
@@ -114,7 +147,11 @@ table .column-1 {
   .stacktable.small-only { display: table; }
 
 }
-
+@media screen and (min-width: 719px) and (max-width: 1200px){
+  header.header-banner-top {
+    margin-top: 90px;
+  }
+}
 @media screen and (max-width: 718px) {
   .stack-cols .stack-col p {
     margin: 0 auto;
@@ -128,15 +165,29 @@ table .column-1 {
     .stack-holder .content {
     padding-top: 20px;
 }
+#testimonials-display .g-2 .g-col {
+    max-width: 100%;
+    margin: 0 auto;
+    float: none;
+}
 }
 
 @media screen and (max-width:667px) {
-  #bannertext {
+/*  #bannertext {
         padding-bottom: 15px;
-  }
+  }*/
+  .header-banner-top .banner {
+    padding-top: 0!important;
+}
+.header-banner-top .banner .primary-wrapper {
+    padding-top: 55%;
+    margin-bottom: -110px;
 }
 
-.header-banner-top .banner .entry-title {visibility:hidden;}
+}
+
+.header-banner-top .banner .entry-title {visibility:hidden; max-height: 118px;
+}
 .stack-header-overlay {background:none;}
 .header-banner-top .banner .banner-image {opacity:1;}
 
